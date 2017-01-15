@@ -83,3 +83,384 @@ a:before, a:after {
 
 
 
+
+
+
+
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand.
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+
+
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar-nav {
+
+     margin: 6px;
+}
+
+
+
+
+.navbar-brand {
+    float: left;
+    height: 66px;
+    padding: 22px 15px;
+    font-size: 18px;
+    line-height: 22px
+}
+.navbar-brand-logo {
+    height: 32px;
+    margin-top: -5px;
+}
+
+.site-footer {
+    height: 44px;
+    padding: 10px 30px;
+    background-color: rgba(0,0,0,.02);
+    border-top: 1px solid #e4eaec;
+}
+
+
+.navbar-inverse {
+    background-color: #62a8ea;
+    border-color: #358fe4;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+     background-color: #358fe4;
+}
+
+
+
+
+
+#headerwrap {
+    background: url(../images/test/degreebg2.jpg) no-repeat center top;
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#headerwrap h1 {
+    margin-top: 130px;
+    color: #fff;
+    font-size: 140px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+#headerwrap h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#headerwrap h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+
+#headerwrap i {
+    font-size: 35px;
+    color: #fff;
+}
+#headerwrap .spacer {
+    margin-top: 220px;
+}
+
+.navbar {
+
+   margin-bottom: 0;
+    border: 1px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.degree-header-cfa{
+	float: none;
+	margin: 30px auto 0 auto;
+	text-align: center;
+}
+.degree-header-cfa-signup{
+	display: inline-block;
+	clear: both;
+	border: 3px solid #fff;
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	font-weight: 500;
+	padding: 10px 30px;
+	border-radius: 25px;
+}
+.degree-header-cfa-signup:hover,.degree-header-cfa-signup:focus{
+	color: #333;
+	text-decoration: none;
+	background-color: #fff;
+}
+.degree-header-cfa span{
+	margin-top: 10px;
+	font-size: 1.3em;
+	font-style: italic;
+	color: #eee;
+	display: block;
+	clear: both;
+}
+.degree-header-cfa span a{
+	color: #eee;
+	border-bottom: 1px dotted #eee;
+}
+.degree-header-cfa span a:hover{
+	text-decoration: none;
+	color: #ddd;
+	border-bottom: 1px dotted #ddd;
+}
+.degree-header-down{
+	margin: 30px auto 0 auto;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.degree-slide-white{
+	background-color: #fff;
+	padding: 10px 0;
+}
+.degree-features{
+	float: none;
+	overflow: hidden;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #EDEDED;
+	margin: 30px auto 10px auto;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;;
+}
+
+
+
+.degree-signupfooter{
+	width: 100%;
+	min-width: 970px;
+	padding: 45px 0;
+	text-align: center;
+	background-color: #0091CC;
+	color: #fff
+}
+.degree-signupfooter>span{
+	font-size: 2em;
+	padding-bottom: 20px;
+	display: inline-block;
+	font-style: italic;
+}
+.signupfooter-link a{
+	display: inline-block;
+	clear: both;
+	border: 3px solid #fff;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-size: 2.5em;
+	font-weight: 600;
+	padding: 10px 30px;
+	border-radius: 30px;
+}
+.signupfooter-link a:hover{
+	color: #333;
+	text-decoration: none;
+	background-color: #fff;
+}
+.degree-signupfooter .socialshare{
+
+	margin: 30px auto 20px auto;
+	text-align: center;
+}
+.degree-signupfooter .socialshare>h5{
+	font-weight: 600;
+	text-transform: uppercase;
+	font-style: 1.8em;
+}
+.degree-signupfooter .socialshare>div{
+	margin: 0 auto;
+	text-align: center;
+}
+.degree-signupfooter .socialshare ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+.degree-signupfooter .socialshare ul.share-buttons li {
+	display: inline-block;
+}
+.degree-signupfooter .socialshare ul.share-buttons li a{
+display: inline-block;
+font-size: 2em;
+margin-right: 10px;
+color: #1C598F;
+}
+.degree-signupfooter .socialshare ul.share-buttons li a:hover{
+	color: #333;
+}
+
+.degree-sc1{
+	margin-top: 10px;
+}
+.degree-sc-unit{
+	position: relative;
+	float: none;
+	margin: 20px auto 80px auto;
+	overflow: hidden;
+	clear: both;
+}
+.scheading{
+	font-size: 2.4em;
+	font-weight: 300;
+	color: #333;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.degree-sc-unit img{
+	position: relative;
+	z-index: 1;
+	max-width: 580px;
+	float: left;
+}
+.degree-sc-unit div{
+	position: absolute;
+	z-index: 2;
+	float: right;
+	right: 0px;
+	width: 47%;
+	background: none repeat scroll 0% 0% rgba(42, 42, 42, 0.72);
+	padding: 10px 20px;
+	bottom: 57px;
+}
+.degree-sc-unit div h5{
+	font-size: 1.8em;
+	font-weight: 600;
+	color: #fff;
+}
+.degree-sc-unit div p{
+	font-size: 1.6em;
+	color: #fff;
+}
+
+.degree-sc-unit2{
+	position: relative;
+	float: none;
+	margin: 20px auto 40px auto;
+	overflow: hidden;
+	clear: both;
+}
+.degree-sc-unit2 img{
+	position: relative;
+	z-index: 1;
+	max-width: 580px;
+	float: right;
+}
+.degree-sc-unit2 div{
+	position: absolute;
+	z-index: 2;
+	float: left;
+	left: 0px;
+	width: 47%;
+	background: none repeat scroll 0% 0% rgba(42, 42, 42, 0.72);
+	padding: 10px 20px;
+	bottom: 57px;
+}
+.degree-sc-unit2 div h5{
+	font-size: 1.8em;
+	font-weight: 600;
+	color: #fff;
+}
+.degree-sc-unit2 div p{
+	font-size: 1.6em;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

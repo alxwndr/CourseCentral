@@ -453,12 +453,375 @@ color: #1C598F;
 
 
 
+/*coursepage*/
 
+.coursepage-faces {
+    margin: 20px 0;
+    background-color: #eee;
+    min-height: 200px;
+    max-height: 600px;
+    padding: 30px;
+    text-align: center;
+    padding: 10px 20px;
+}
 
+.coursepage-faces span {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #6B6B6B;
+}
 
+.coursepage-faces span span {
+    font-size: 1.6em;
+    font-weight: 600;
+    display: block;
+    clear: both;
+    color: #444;
+}
 
+.coursepage-faces ul {
+    margin-top: 10px;
+    padding: 0 0 10px 0;
+}
 
+.coursepage-faces ul li {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 3px solid #fff;
+    margin: 5px 5px
+}
 
+.coursepage-faces ul li img {
+    max-width: 100%;
+}
+
+.coursepage-default-imgtext {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: #fff;
+    line-height: 40px;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cp-ad-vertical {
+    text-align: right;
+    margin-top: 20px;
+    min-height: 620px;
+}
+
+.coursepage-detailmain-cnt {
+    position: relative;
+}
+
+.coursepage-details-content {
+    background-color: #FFF;
+    min-height: 340px;
+    padding: 15px;
+    border: 1px solid #E9EAEC;
+    border-radius: 8px;
+}
+
+.coursepage-titleblock>span {
+    color: #777;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.coursepage-cbtitle {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #777;
+}
+
+.coursepage-cbtitle>span {
+    color: #777;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.coursepage-coursenumber {
+    text-transform: uppercase;
+    color: #0E87C9;
+    border-bottom: 1px dotted #A2C7DB;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.coursepage-coursenumber:hover {
+    color: #4b4b4b;
+    text-decoration: none
+}
+
+.coursepage-coursetitle {
+    color: #3D3F41;
+    font-size: 2.6em;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.coursepage-coursemeta {
+    margin: 15px 0px 20px 0;
+    padding: 0 0 0 0;
+}
+
+.coursepage-coursemeta li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-right: 30px;
+    text-transform: uppercase;
+    color: #898989;
+}
+
+.coursepage-coursemeta li a {
+    color: #0E87C9;
+    border-bottom: 1px dotted #A2C7DB;
+    text-decoration: none;
+}
+
+.coursepage-coursemeta li span {
+    color: #4b4b4b;
+}
+
+.coursepage-coursemeta li a:hover {
+    color: #111;
+    text-decoration: none;
+}
+
+.coursepage-titleblock {
+}
+
+.coursepage-tabnav {
+    box-shadow: 0px 1px 0px #f2f2f2;
+    border-top: 1px solid #ddd;
+    padding: 10px 0 0 0;
+    margin-bottom: 10px;
+}
+
+.coursepage-tabnav>li {
+    margin-right: 25px;
+}
+
+.coursepage-tabnav>li>a {
+    background-color: transparent!important;
+    border: none;
+    font-size: 1.5em;
+    color: #898989;
+    padding: 0 5px 12px 0;
+}
+
+.coursepage-tabnav>li.active>a,.coursepage-tabnav>li.active>a:hover,.coursepage-tabnav>li.active>a:focus {
+    background-color: transparent!important;
+    border: none;
+    border-bottom: 2px solid #4B4B4B;
+    font-weight: 600;
+}
+
+.coursepage-tabnav>li>a:hover {
+    background-color: transparent!important;
+    border-bottom: 2px solid #898989;
+}
+
+.coursepage-tabnav .share-icons {
+    float: right;
+    display: inline-block;
+    position: relative;
+    margin-top: -1px;
+    font-size: 1.8em;
+}
+
+.coursepage-tabnav .share-icons>i {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+i.fa-facebook {
+    color: #425F9C;
+}
+
+i.fa-twitter {
+    color: #55ACEE;
+}
+
+i.fa-linkedin {
+    color: #007BB6;
+}
+
+i.fa-google-plus {
+    color: #D71D1E;
+}
+
+i.fa-pinterest {
+    color: #F91A1B;
+}
+
+i.fa-tumblr {
+    color: #34465E;
+}
+
+i.fa-envelope {
+    color: #00B0B6;
+}
+
+i.fa-share-alt {
+    color: #FFAA00;
+}
+
+.coursepage-tabnav .other-title-share-cnt {
+    left: -110px!important;
+}
+
+.coursepage-tabnav .other-title-share-cnt:before {
+    right: 47px!important;
+}
+
+.other-title-share-cnt img {
+    display: inline!important;
+}
+
+.other-title-share-cnt input {
+    display: inline-block;
+    width: 65%;
+    margin-top: 10px;
+    float: left;
+    font-size: 11px;
+    color: #333;
+    cursor: default;
+}
+
+.other-title-share-cnt label {
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.other-title-share-cnt label input {
+    margin-top: 0;
+}
+
+.coursepage-tabcnt {
+    padding: 10px 0;
+}
+
+.coursedetails-description {
+    font-size: 1.4em;
+    color: #4B4B4B;
+    line-height: 1.76em;
+}
+
+.coursedetails-description>span {
+    display: block;
+    clear: both;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
+.coursedetails-extrainfo {
+    margin-top: 40px;
+    font-size: 1.4em;
+    clear: both;
+}
+
+.coursepage-extrainfo-coursetags>span {
+    color: #777;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 5px;
+}
+
+.coursepage-extrainfo-coursetags a {
+    color: #3c3c3c;
+    font-size: 1em;
+    margin-right: 7px;
+}
+
+.coursepage-extrainfo-coursetags a:hover {
+    text-decoration: none;
+    color: #DF1313;
+}
+
+.coursepage-tabcnt>div {
+    overflow: hidden;
+    margin-bottom: 10px;
+    min-height: 200px;
+}
+
+div#CourseInfo.noreview {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+#CourseInfo ul {
+    padding: 0 0 0 0;
+}
+
+#CourseInfo ul li {
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 1.4em;
+}
+
+#CourseInfo ul li span {
+    display: block;
+    clear: both;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #777;
+    font-size: 0.875em;
+    padding-bottom: 5px;
+}
+
+#CourseInfo ul li .courseinfoimg {
+    max-width: 160px;
+    height: 30px
+
+}
+
+#CourseInfo ul li .courseinfoimg img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.CourseInfoTab-list1 {
+    float: left;
+    width: 48%
+}
+
+.CourseInfoTab-list2 {
+    float: right;
+    width: 48%
+}
+
+.coursepage-improve {
+    font-size: 1.4em;
+    margin-top: 15px;
+}
+
+.coursepage-improve>span {
+    color: #4b4b4b;
+    display: inline-block;
+    margin-bottom: 35px;
+}
+
+.coursepage-improve label {
+    text-align: left!important;
+}
 
 
 

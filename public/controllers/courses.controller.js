@@ -38,3 +38,29 @@ angular.module("kB")
 
 
 }])
+
+.controller('CourseCreateCtrl', ['$scope', '$http', '$routeParams', '$location', function($scope, $http, $routeParams, $location){
+    $http.get('/categories').success(function(data){
+        $scope.categories = data;
+    });
+
+    $scope.addCourse = function(){
+        var data = {
+            title: $scope.title,
+            body: $scope.body,
+            linkurl: $scope.linkurl,
+            previmage: $scope.previmage,
+            provider: $scope.provider,
+            lang: $scope.lang,
+
+            category: $scope.category
+        };
+
+        $http.post('/courses', data).success(function(data, status){
+            console.log(status);
+        });
+
+        $location.path('/courses');
+    };
+}])
+

@@ -6,3 +6,10 @@ angular.module("kB")
     });
 }])
 
+
+.controller('CoursesCategoryCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
+    $http.get('/courses/category/' + $routeParams.category).success(function(data){
+        $scope.cat_courses = data;
+        $scope.category = $routeParams.category;
+    });
+}])

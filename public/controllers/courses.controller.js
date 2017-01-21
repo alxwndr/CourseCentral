@@ -13,3 +13,28 @@ angular.module("kB")
         $scope.category = $routeParams.category;
     });
 }])
+
+.controller('CourseDetailsCtrl', ['$scope', '$http', '$routeParams', '$location', function($scope, $http, $routeParams, $location){
+    $http.get('/courses/' + $routeParams.id).success(function(data){
+        $scope.course = data;
+    });
+
+    $scope.removeCourse = function(){
+
+        $http.delete('/courses/'+$routeParams.id)
+
+            .success(function(data){
+                console.log(data);
+            });
+
+
+        // $http.delete('/courses/'+$routeParams.id).success(function(data){
+        //     console.log(data);
+        // });
+
+        $location.path('/courses');
+
+    };
+
+
+}])

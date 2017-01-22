@@ -64,3 +64,33 @@ angular.module("kB")
     };
 }])
 
+
+.controller('CourseEditCtrl', ['$scope', '$http', '$routeParams', '$location', function($scope, $http, $routeParams, $location){
+    $http.get('/categories').success(function(data){
+        $scope.categories = data;
+    });
+
+    $http.get('/courses/' + $routeParams.id).success(function(data){
+        $scope.course = data;
+    });
+
+    $scope.updateCourse = function(){
+        var data = {
+            id:       $routeParams.id,
+            title:    $scope.course.title,
+            body:     $scope.course.body,
+            linkurl:  $scope.course.linkurl,
+            previmage:  $scope.course.previmage,
+            provider:  $scope.course.provider,
+            lang: $scope.course.lang,
+
+            category: $scope.course.category
+        };
+
+        $http.put('/courses', data).success(function(data, status){
+            console.log(status);
+        });
+
+        $location.path('/courses');
+    };
+}]);

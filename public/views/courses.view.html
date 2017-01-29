@@ -17,6 +17,19 @@
 
 
 
+                <div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="course in courses | limitTo:100">
+
+                    <div class="teammembers">
+                        <div class="valign">
+                            <div class="teamimg">
+                                <img class="img-responsive" ng-src="{{course.previmage}}" alt="" class="avatar-me js-avatar-me">
+                            </div>
+                            <div class="desc">
+                                <h4>{{course.title}}</h4>
+                                <!--<small>{{course.body | limitTo:60}} </small>-->
+
+            </div>
+
 
 
     </div>

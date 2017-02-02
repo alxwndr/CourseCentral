@@ -32,6 +32,45 @@ router.get('/category/:category', function(req, res, next) {
 
 
 
+    // Create Course
+    Course.createCourse(newCourse, function(err, course){
+        if(err){
+            console.log(err);
+        }
+
+        res.location('/courses');
+        res.redirect('/courses');
+    });
+});
+
+// Update Course
+router.put('/', function(req, res, next){
+    // Get Form Values
+
+    var id = req.body.id;
+    var data = {
+        title: req.body.title,
+        category: req.body.category,
+        body: req.body.body,
+        linkurl : req.body.linkurl,
+        previmage : req.body.previmage,
+        provider : req.body.provider,
+        lang: req.body.lang
+
+    };
+
+    // Create Course
+    Course.updateCourse(id, data, function(err, course){
+        if(err){
+            console.log(err);
+        }
+
+        res.location('/courses');
+        res.redirect('/courses');
+    });
+});
+
+
 // Remove Course
 router.delete('/:id', function(req, res, next){
 

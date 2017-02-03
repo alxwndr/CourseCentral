@@ -30,7 +30,28 @@ router.get('/category/:category', function(req, res, next) {
   });
 });
 
+router.post('/', function(req, res, next){
+    // Get Form Values
+    var title = req.body.title;
+    var category = req.body.category;
+    var body = req.body.body;
+    var linkurl = req.body.linkurl;
+     var previmage = req.body.previmage;
+     var provider = req.body.provider;
+     var lang = req.body.lang;
 
+
+    // Course Object
+    var newCourse = new Course({
+        title: title,
+        category: category,
+        body: body,
+        linkurl: linkurl,
+        previmage: previmage,
+        provider: provider,
+        lang: lang
+
+    });
 
     // Create Course
     Course.createCourse(newCourse, function(err, course){

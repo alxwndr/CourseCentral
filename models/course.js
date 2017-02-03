@@ -44,3 +44,22 @@ var courseSchema = mongoose.Schema({
  
 
 });
+
+var Course = module.exports = mongoose.model('Course', courseSchema);
+
+
+// Get All Courses
+module.exports.getCourses = function(callback){
+    Course.find(callback);
+};
+
+//  Get Course By ID
+module.exports.getCourseById = function(id, callback){
+    Course.findById(id, callback);
+};
+
+// Get Category Courses
+module.exports.getCoursesByCategory = function(category, callback){
+    var query = {category: category};
+    Course.find(query, callback);
+};

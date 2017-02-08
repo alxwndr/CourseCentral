@@ -10,7 +10,25 @@
         <select class="form-control" ng-model="category" name="category">
             <option ng-repeat="category in categories" value="{{category.name}}">{{category.name}}</option>
         </select>
+      </div>
+       <div class="form-group">
+        <label>Link</label>
+        <input type="text" class="form-control" ng-model="linkurl" name="linkurl" placeholder="Enter link">
+      </div>
+      <div class="form-group">
+        <label>Image</label>
+        <input type="text" class="form-control" ng-model="previmage" name="previmage" placeholder="Enter link">
+      </div>
 
+       <div class="form-group">
+        <label>Lang</label>
+        <input type="text" class="form-control" ng-model="lang" name="lang" placeholder="Enter link">
+      </div>
+
+       <div class="form-group">
+        <label>Provider</label>
+        <input type="text" class="form-control" ng-model="provider" name="provider" placeholder="Enter link">
+      </div>
 
       
       <div class="form-group">

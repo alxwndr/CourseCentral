@@ -85,7 +85,23 @@
                 </div>
             </div>
 
-
+<div class="coursepage-cfa coursepage-cfa-notsaved">
+    <div class="coursepage-cfa-loading"><span><i class="fa fa-refresh fa-spin"></i> Loading...</span></div>
+    <h4>Add to Buffet</h4>
+    <span class="coursepage-cfa-underline">Save course to Your Buffet - Get notified, Track Progress, Plan Future Learning.</span>
+    <div class="btn-group coursepage-cfa-btncnt">
+        <button type="button" id="coursepage-btn-save" class="btn btn-default coursepage-cfa-btn-save" onclick="new_save_course(83,1);return false;"><i class="fa fa-plus"></i> Save for Later</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle coursepage-cfa-btn-progress" data-toggle="dropdown">
+I Have Already <span class="caret"></span>
+</button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="javascript:new_save_course(83,2);">Enrolled</a></li>
+                <li><a href="javascript:new_save_course(83,3);">Completed</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 
 <div class="actions">

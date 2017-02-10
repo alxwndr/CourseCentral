@@ -10,7 +10,24 @@
     <div ng-controller="CategoriesCtrl">
        
        
+            <div class="box">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" ng-repeat="category in categories">
+                    <div class="teammembers">
+                        <div class="valign">
+                            <div class="teamimg">
+                                <img class="img-responsive" ng-src="{{course.previmage}}" alt="" class="avatar-me js-avatar-me">
+                            </div>
+                            <div class="desc">
+                                <h4>{{category.name}}</h4>
+                                <small>{{category.description}}</small>
+                                <a class="btn btn-default" href="#/courses/category/{{category.name}}">VIEW COURSES &rarr;</a>
+                            </div>
+                        </div>
 
+                    </div>
+                    <!-- end member -->
+                </div>
+            </div>
        
        
 

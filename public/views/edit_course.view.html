@@ -2,6 +2,23 @@
 <h3>Edit Course</h3>
     <form ng-submit="updateCourse()">
       <div class="form-group">
+        <label>Course Title</label>
+        <input type="text" class="form-control" ng-model="course.title" name="title" placeholder="Enter Title">
+      </div>
+      <div class="form-group">
+        <label>Category</label>
+        <select class="form-control" ng-model="course.category" name="category">
+            <option ng-repeat="category in categories" value="{{category.name}}">{{category.name}}</option>
+        </select>
+      </div>
+       <div class="form-group">
+        <label>Link</label>
+        <input type="text" class="form-control" ng-model="linkurl" name="linkurl" placeholder="Enter url">
+      </div>
+     <div class="form-group">
+        <label>Image</label>
+        <input type="text" class="form-control" ng-model="previmage" name="previmage" placeholder="Enter url">
+      </div>
 
-    </form>
+
 </div>
